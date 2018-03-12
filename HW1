@@ -1,25 +1,28 @@
-ex1.
-
+ex.1
 def trifeca(word):
-       """
-       Checks whether word contains three consecutive double-letter pairs.
-       word: string
-       returns: bool
-       """
-word = "22222333333"
+    """
+    Checks whether word contains three consecutive double-letter pairs.
+    word: string
+    returns: bool
+    """
+    word = "22222333333"
 count = 0
-for i in range(1, len(word)):
-    if word[i - 1] == word[i]:
+    for i in range(1, len(word)):
+        if word[i - 1] == word[i]:
         count = count + 1
-    while count < 3:
+        while count < 3:
      is_polly = False
-    else:
-     is_polly = True
+        else:
+        is_polly = True
         print(is_polly)
+
+
+
+
+
+
         
-        
-        ex2.
-        
+ex2.
         def check_palindrome():
     """
     Runs through all 6-digit numbers and checks the mentioned conditions.
@@ -28,98 +31,65 @@ for i in range(1, len(word)):
     Note: It should print out the first number (with a palindrome in its last 4 digits),
     not all  4 "versions" of it.
     """
-test is True
-for i in range(100000,999999):
-    my_num=i
+    test is True
+    for i in range(100000,999999):
+        my_num=i
 
-    while test is True:
-#condition_1: palindrome in the last 4 digits
-    short_num = str(my_num)[-4:]
-    short_num == str(short_num)[::-1]
-    else:
-    test is False
+        while test is True:
+        #condition_1: palindrome in the last 4 digits
+        short_num = str(my_num)[-4:]
+        short_num == str(short_num)[::-1]
+        else:
+        test is False
 
-    while test is True:
-#condition_2: add 1 and chck palindrome in the last 5 digits
-    my_num_pluse_one = my_num+1
-    short_num = my_num_pluse_one[-5:]
-    short_num == str(short_num)[::-1]
-    else:
-    test is False
-    while test is True:
+        while test is True:
+        #condition_2: add 1 and chck palindrome in the last 5 digits
+        my_num_pluse_one = my_num+1
+        short_num = my_num_pluse_one[-5:]
+        short_num == str(short_num)[::-1]
+        else:
+        test is False
+        while test is True:
         # condition_3: Another addition of 1 results in a palindrome in the middle 4 digits
         my_num_pluse_two =  my_num_pluse_one+1
         mid_num = str(my_num_pluse_two)
         a, b, c, d, e ,f = mid_num # Unpack into variables
         mid_num = b, c, d, e
         mid_num == str(mid_num)[::-1]
-    else:
+        else:
         test is False
 
-    while test is True:
+        while test is True:
         # condition_4: A final addition of 1 results in a 6-digit palindrome.
         my_final_number =  my_num_pluse_two+1
         my_final_number == str(my_final_number)[::-1]
-    else:
+        else:
         test is False
 if test is True:
     Print(my_num)
 
+
+
 ex3.
-
-# -*- coding: utf-8 -*-
 """
-Created on Sat Mar 10 20:43:05 2018
-
-@author: Noam_Goldway
-"""
-
-
+def compare_subjects_within_student(subj1_all_students,
+                                    subj2_all_students):
+    """
+    Compare the two subjects with their students and print out the "preferred"
+    subject for each student. Single-subject students shouldn't be printed.
+    Choice for the data structure of the function's arguments is up to you.
+    """
 # use these dictionaries as input
 # physics1 = {'yoni':80, 'silvan':75, 'ronen':90, 'ronen':75}
 # physics2 = {'yoni':90, 'silvan':85, 'ronen':100, 'ronen':85}
 # philosophy1 = { 'yoni':70, 'silvan':85, 'ronen':50,'ronen':65}
 # philosophy2 = { 'yoni':60, 'silvan':75, 'ronen':80,'ronen':85}
 
-# book keeping
-def compare_subjects(history1, history2, math1, math2):
 
 
-    for key in range(0,len(history1))
-best_grade= (max((physics1,key),(physics2,key),(philosophy1,key),(philosophy2,(key))
-      print(best_grade.keys())
+    for key in range(0,len(history1))  
+         best_grade= (max((physics1,key),(physics2,key),(philosophy1,key),(philosophy2,(key))
+         print(best_grade.keys())
 
 
-
-
-
-
-
-    better_at_history = {}
-    better_at_math = {}
-    better_at = {}
-    for key in history1:
-        if key in history2:
-            if history1[key] > history2[key]:
-                better_at_history[key] = history1[key]
-                better_at_history[key] = 'History1'
-            else:
-                better_at_history[key] = history2[key]
-                better_at_history[key] = 'History2'
-    for key in math1:
-        if key in math2:
-            if math1[key] > math2[key]:
-                better_at_math[key] = math1[key]
-                better_at_math[key] = 'Math1'
-            else:
-                better_at_math[key] = math2[key]
-                better_at_math[key] = 'Math2'
-
-    for key in better_at_math:
-        if key in better_at_history:
-            if better_at_math[key] > better_at_history[key]:
-                better_at[key] = better_at_math[key]
-            else:
-                better_at[key] = better_at_history[key]
-    return better_at
 
